@@ -24,19 +24,55 @@
       <div class="header-menu">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Новини</a>
+            <a
+              class="nav-link active"
+              id="news-tab"
+              data-toggle="tab"
+              href="#news"
+              role="tab"
+              aria-controls="news"
+              aria-selected="true"
+              >Новини</a
+            >
           </li>
-          <li class="header-li">
-            <a class="nav-link" href="#">Виступи та коментарі</a>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="comments-tab"
+              data-toggle="tab"
+              href="#comments"
+              role="tab"
+              aria-controls="comments"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-selected="false"
+              >Виступи та коментарі</a
+            >
           </li>
-          <li class="header-li"><a class="nav-link" href="#">Анонси</a></li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="anons-tab"
+              data-toggle="tab"
+              href="#anons"
+              role="tab"
+              aria-controls="anons"
+              aria-selected="false"
+              >Анонси</a
+            >
+          </li>
         </ul>
       </div>
 
-      <div class="main-info">
+      <div
+        class="main-info tab-pane fade show active"
+        id="news"
+        role="tabpanel"
+        aria-labelledby="news-tab"
+      >
         <div class="pic">
           <img
-            src="./pic/Rectangle 4.jpeg"
+            src="../assets/pics/Rectangle 4.jpg"
             alt="just one pic"
             width="174px"
             height="120px"
@@ -57,6 +93,54 @@
               сурдоперекладача
             </h3>
             <p>3 години тому</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="main-info tab-pane fade"
+        id="comments"
+        role="tabpanel"
+        aria-labelledby="comments-tab"
+      >
+        <div class="pic">
+          <img
+            src="../assets/pics/Rectangle 4.jpg"
+            alt="just one pic"
+            width="174px"
+            height="120px"
+          />
+        </div>
+        <div class="main-text">
+          <div class="first-comments">
+            <h3 class="text">
+              Коментарі
+            </h3>
+            <p>5 годин тому</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="main-info tab-pane fade"
+        id="anons"
+        role="tabpanel"
+        aria-labelledby="anons-tab"
+      >
+        <div class="pic">
+          <img
+            src="../assets/pics/Rectangle 4.jpg"
+            alt="just one pic"
+            width="174px"
+            height="120px"
+          />
+        </div>
+        <div class="main-text">
+          <div class="first-anons">
+            <h3 class="text">
+              Анонс
+            </h3>
+            <p>100 годин тому</p>
           </div>
         </div>
       </div>
